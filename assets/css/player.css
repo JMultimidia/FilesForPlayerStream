@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css?family=Homenaje');
+html {
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: 'Homenaje', sans-serif;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-size: 15px;
+    color: #FFF;
+    background: -moz-linear-gradient(top left, #2a2d3e 30%, #868686);
+    background: -o-linear-gradient(top left, #2a2d3e 30%, #868686);
+    background: -webkit-linear-gradient(top left, #2a2d3e 30%, #868686);
+    background: linear-gradient(to bottom right, #2f3640 30%, #868686);
+    background-attachment: fixed;
+}
+:root {
+    --cor: #313a47;
+}
+.container {
+    width: 100%;
+    max-width: 1190px;
+}
+.lt-ie9 .animated {
+    opacity: 1 !important;
+    -webkit-animation: none !important;
+    animation: none !important;
+    transform: none !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Homenaje', sans-serif;
+    margin: 10px 0;
+    font-weight: bold;
+}
+h5 {
+    font-size: 15px;
+}
+.link {
+    text-decoration: underline;
+    display: inline-block;
+}
+.link-grey {
+    color: #c5c8c9;
+}
+.link:hover {
+    color: var(--cor);
+}
+.wrapper {
+    height: 100%;
+    min-height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+a {
+    color: #def;
+    text-decoration: none
+}
+a:hover, a:active {
+    outline: 0;
+}
+a:hover, a:focus {
+    color: #FFFFFF;
+    text-decoration: none;
+    outline: none;
+}
+i {
+    padding-right: 5px
+}
+.logomarca {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px
+}
+.infos {
+    text-align: center;
+    margin-top: 5px;
+}
+.infos p {
+    font-family: 'Homenaje', sans-serif;
+    color: #FFF;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+#audio-player-radio {
+    margin-bottom: 10px
+}
+.tocador {
+    font-family: 'Homenaje', sans-serif;
+    margin: 0 auto;
+    width: 377px;
+}
+#tocando {
+    font-size: 1.1em;
+    color: #ffca39;
+    text-align: center;
+    text-transform: uppercase;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+audio:not([controls]) {
+    display: none;
+}
+[hidden] {
+    display: none;
+}
+::-moz-selection {
+    background: #B5121B;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: #B5121B;
+    color: #fff;
+    text-shadow: none;
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+b, strong {
+    font-weight: bold;
+}
+blockquote {
+    margin: 1em 40px;
+}
+dfn {
+    font-style: italic;
+}
+pre, code, kbd, samp {
+    font-family: monospace, serif;
+    _font-family: 'PT Sans Narrow', monospace;
+    font-size: 1em;
+}
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+q {
+    quotes: none;
+}
+q:before, q:after {
+    content: "";
+    content: none;
+}
+small {
+    font-size: 85%;
+}
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 0;
+}
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #FFFFFF;
+    padding: 0.2em 0;
+}
+h3 {
+    font-family: 'Homenaje', sans-serif
+}
+.btn {
+    background-color: #fe6f09;
+    font: bold 14px/1.8 'Homenaje', sans-serif;
+}
+.stream {
+    opacity: 1.0;
+    cursor: pointer
+}
+.facebook {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    position: relative;
+    cursor: pointer;
+    padding: 0 10px 0 50px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    font: bold 14px/2.4 'Homenaje', sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: capitalize;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: rgba(100, 138, 214, 1);
+    -webkit-box-shadow: 0 5px 0 0 rgba(88, 116, 173, 1);
+    box-shadow: 0 5px 0 0 rgba(88, 116, 173, 1);
+    text-shadow: 0 1px 1px rgba(87, 151, 180, 0.36);
+    -webkit-transition: top 50ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: top 50ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: top 50ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: top 50ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.facebook:hover {
+    font: bold 14px/2.4 'Homenaje', sans-serif;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(91, 125, 193, 1);
+    -webkit-box-shadow: 0 5px 0 0 rgba(80, 105, 155, 1);
+    box-shadow: 0 5px 0 0 rgba(80, 105, 155, 1);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.facebook:active {
+    top: 2px;
+    -webkit-box-shadow: 0 3px 0 0 rgba(80, 105, 155, 1);
+    box-shadow: 0 3px 0 0 rgba(80, 105, 155, 1);
+}
+.facebook::before {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    content: "";
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    border: 0 solid #018dc4;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    font: normal medium/normal 'Homenaje', sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: url("../images/face.png"), rgba(0, 0, 0, 0.05);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -webkit-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: 20px auto;
+    background-size: 20px auto;
+    text-shadow: -1px -1px 0 rgba(15, 73, 168, 0.66);
+    -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.social {
+    clear: both;
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 10px
+}
+.sound-trigger, .sound-control {
+    border: none;
+    background: none;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+    line-height: 30px;
+    display: block;
+}
+.jp-volume-controls {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    height: 30px;
+    margin-top: -15px;
+    width: 80px;
+}
+.jp-radioPlayer .jp-volume-controls {
+    right: 0;
+}
+.open .jp-volume-bar {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+}
+.jp-volume-bar {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    position: absolute;
+    left: 10px;
+    top: 100%;
+    background: #fff;
+    border-radius: 10px;
+    height: 10px;
+    width: 100%;
+    padding: 2px;
+    cursor: pointer;
+    display: none;
+}
+.jp-volume-bar-value {
+    height: 5px;
+    margin-top: -1px;
+    border-radius: 4px;
+    background: #e28827;
+}
+.playList-trigger:hover, .playList-trigger:focus, .playerFullOn .playList-trigger {
+    color: #fff;
+}
+.jp-radioPlayer {
+    position: relative;
+    background: var(--cor);
+    padding: 10px 0;
+    color: #fff;
+    border-radius: 5px
+}
+.jp-radioPlayer .container {
+    position: relative;
+}
+.jp-radioPlayer .jp-controls-holder {
+    font-size: 30px;
+    float: left;
+    position: relative;
+    z-index: 20;
+    padding-left: 0;
+}
+.jp-radioPlayer .jp-controls-holder > div {
+    float: left;
+}
+.play-pause {
+    cursor: pointer;
+}
+.jp-radioPlayer .sound-trigger {
+    margin-right: 0;
+}
+.jp-radioPlayer .jp-volume-bar {
+    left: auto;
+    right: 60px;
+    top: 50%;
+    margin-top: -2px;
+    width: 130px;
+    height: 7px
+}
+.jp-radioPlayer .jp-volume-bar {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+}
+.jp-state-playing .music_pseudo_bars {
+    display: block;
+}
+.music_pseudo_bars {
+    display: none;
+    height: 30px;
+    left: 75px;
+    margin: -15px 0 0 0;
+    position: absolute;
+    top: 50%;
+}
+.music_pseudo_bar {
+    background: #fff;
+    bottom: 1px;
+    position: absolute;
+    width: 1px;
+    animation: sound 0ms -300ms linear infinite alternate;
+}
+@keyframes sound {
+    0% {
+        opacity: .35;
+        height: 3px;
+    }
+    100% {
+        opacity: 1;
+        height: 28px;
+    }
+}
+@media (max-width: 490px) {
+    .song-list li {
+        width: 50%
+    }
+    .jp-playlist {
+        font-size: 12px;
+    }
+    .the-xv-Jplayer .audio-title {
+        top: 100%;
+        margin-top: -30px;
+        left: 15px;
+    }
+    .the-xv-Jplayer .controls {
+        margin-top: -30px;
+    }
+    .tocador {
+        width: 345px;
+    }
+}
+
+@media (max-width: 360px) {
+    .jp-radioPlayer #tocando {
+        max-width: 200px;
+        padding: 5px 5px 0 33px;
+        margin: 0;
+        text-align: left;
+        text-transform: capitalize;
+    }
+    .tocador {
+        width: 345px;
+    }
+    h5 {
+        font-size: 12px;
+    }
+}
+.music_pseudo_bar:nth-child(1) {
+    left: 1px;
+    animation-duration: 474ms;
+}
+.music_pseudo_bar:nth-child(2) {
+    left: 5px;
+    animation-duration: 433ms;
+}
+.music_pseudo_bar:nth-child(3) {
+    left: 9px;
+    animation-duration: 407ms;
+}
+.music_pseudo_bar:nth-child(4) {
+    left: 13px;
+    animation-duration: 458ms;
+}
+.music_pseudo_bar:nth-child(5) {
+    left: 17px;
+    animation-duration: 400ms;
+}
+.music_pseudo_bar:nth-child(6) {
+    left: 21px;
+    animation-duration: 427ms;
+}
+.music_pseudo_bar:nth-child(7) {
+    left: 25px;
+    animation-duration: 441ms;
+}
+.music_pseudo_bar:nth-child(8) {
+    left: 29px;
+    animation-duration: 419ms;
+}
+.music_pseudo_bar:nth-child(9) {
+    left: 33px;
+    animation-duration: 487ms;
+}
+.music_pseudo_bar:nth-child(10) {
+    left: 37px;
+    animation-duration: 442ms;
+}
+.music_pseudo_bar:nth-child(11) {
+    left: 41px;
+    animation-duration: 474ms;
+}
+.music_pseudo_bar:nth-child(12) {
+    left: 45px;
+    animation-duration: 433ms;
+}
+.music_pseudo_bar:nth-child(13) {
+    left: 49px;
+    animation-duration: 407ms;
+}
+.music_pseudo_bar:nth-child(14) {
+    left: 53px;
+    animation-duration: 458ms;
+}
+.music_pseudo_bar:nth-child(15) {
+    left: 57px;
+    animation-duration: 400ms;
+}
+.music_pseudo_bar:nth-child(16) {
+    left: 61px;
+    animation-duration: 427ms;
+}
+.music_pseudo_bar:nth-child(17) {
+    left: 65px;
+    animation-duration: 441ms;
+}
+.music_pseudo_bar:nth-child(18) {
+    left: 69px;
+    animation-duration: 419ms;
+}
+.music_pseudo_bar:nth-child(19) {
+    left: 73px;
+    animation-duration: 487ms;
+}
+.music_pseudo_bar:nth-child(21) {
+    left: 77px;
+    animation-duration: 442ms;
+}
